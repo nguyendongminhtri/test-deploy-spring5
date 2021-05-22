@@ -64,7 +64,7 @@ public class AuthController {
         }
 
         if (userService.existsByEmail(signUpRequest.getEmail())) {
-            return new ResponseEntity<>(new ResponseMessage("Fail -> Email is already in use!"),
+            return new ResponseEntity<>(new ResponseMessage("Fail -> Email is already in use!  asfd"),
                     HttpStatus.BAD_REQUEST);
         }
 
